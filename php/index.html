@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PHP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="box">
+    <div class="fabric-container">
+
+        <div class="container">
+            <div>
+                <div class="tittle">1. Tkanina</div>
+                <p id="color-name-text" class="select-text"></p>
+            </div>
+            <div class="container-fabric">
+                <img id="myImg" class="fabric-img" src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp"
+                     alt="fabric-img">
+                <button id="fabtic-change-btn" class="button-select">ZMIEŃ</button>
+            </div>
+
+        </div>
+        <div id="list-container" class="transition hide">
+            <button class="fabric-select-btn" onclick="updateFabric('Tkanina 1')">Tkanina 1</button>
+            <button class="fabric-select-btn" onclick="updateFabric('Tkanina 2')">Tkanina 2</button>
+            <button class="fabric-select-btn" onclick="updateFabric('Tkanina 3')">Tkanina 3</button>
+        </div>
+    </div>
+    <div class="container-color-legs">
+        <div class="tittle-legs-color">
+            <div class="tittle">2. Kolor nóżek</div>
+            <button id="legs-change-btn" class="button-select">WYBIERAM</button>
+        </div>
+        <div id="select-leg-text" class="select-text"></div>
+        <div id="leg-container" class="transition hide">
+            <button class="button-fabric">Wszystkie</button>
+            <button class="button-fabric">Bez dopłaty</button>
+            <button class="button-fabric">Welur</button>
+            <button class="button-fabric">Plecionka</button>
+            <button class="button-fabric">Ekoskóra</button>
+            <div id="legs-list" class="color-legs-box">
+                <button class="leg-btn" onclick="updateLeg('Riviera 91 (Davis)')">
+                    <img class="fabric-img" src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp"
+                         alt="fabric-img">
+                    <span class="btn-text">Riviera 91 (Davis)</span>
+                </button>
+                <button class="leg-btn" onclick="updateLeg('Kolor')">
+                    <img class="fabric-img" src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp"
+                         alt="fabric-img">
+                    <span class="btn-text">Riviera 91 (Davis)</span>
+                </button>
+                <button class="leg-btn" onclick="updateLeg('Kolor2')">
+                    <img class="fabric-img" src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp"
+                         alt="fabric-img">
+                    <span class="btn-text">Riviera 91 (Davis)</span>
+                </button>
+                <button class="leg-btn" onclick="updateLeg('Kolor3')">
+                    <img class="fabric-img" src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp"
+                         alt="fabric-img">
+                    <span class="btn-text">Riviera 91 (Davis)</span>
+                </button>
+                <button class="leg-btn" onclick="updateLeg('Kolor4')">
+                    <img class="fabric-img" src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp"
+                         alt="fabric-img">
+                    <span class="btn-text">Riviera 91 (Davis)</span>
+                </button>
+                <button class="leg-btn" onclick="updateLeg('Kolor5')">
+                    <img class="fabric-img" src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp"
+                         alt="fabric-img">
+                    <span class="btn-text">Riviera 91 (Davis)</span>
+                </button>
+                <button class="leg-btn" onclick="updateLeg('Kolor6')">
+                    <img class="fabric-img" src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp"
+                         alt="fabric-img">
+                    <span class="btn-text">Riviera 91 (Davis)</span>
+                </button>
+                <button class="leg-btn" onclick="updateLeg('Kolor7')">
+                    <img class="fabric-img" src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp"
+                         alt="fabric-img">
+                    <span class="btn-text">Riviera 91 (Davis)</span>
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container-corner-layout">
+        <div class="corner-layout">
+            <div class="tittle">3. Układ narożnika</div>
+            <button id="corner-change-btn" class="button-select">WYBIERZ</button>
+        </div>
+        <div id="corner-type-text" class="select-text"></div>
+
+        <div id="corner-container" class="transition hide">
+            <button class="fabric-select-btn" onclick="updateCorner('Prawy')">Prawy</button>
+            <button class="fabric-select-btn" onclick="updateCorner('Lewy')">Lewy</button>
+        </div>
+    </div>
+    <button class="button-submit" id="submit">Submit</button>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content"
+         src="img/tkanina-giuseppe-18-tkanina-obiciowa-kolekcja.webp">
+
+    <div id="caption"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
